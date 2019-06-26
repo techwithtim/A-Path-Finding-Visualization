@@ -1,3 +1,4 @@
+import install_requirements
 import pygame
 import sys
 import math
