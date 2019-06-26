@@ -12,6 +12,6 @@ You can also run A*-Path-Finding in Gitpod, a free online dev environment for Gi
 
 If you're intersted in a paid subscription with GitPod use the coupon code: **TECHWITHTIM2FQBMX**
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/techwithtim/A-Path-Finding-Visualization/edit/master/path_finding.py)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](gitpod.io/#https://github.com/techwithtim/A-Path-Finding-Visualization/edit/master/path_finding.py)
 
 Please Note: The GUI is a little glithcy in GitPod. For best results expand the VNC window to be full screen.
