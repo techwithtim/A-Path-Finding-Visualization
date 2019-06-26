@@ -1,11 +1,21 @@
-import install_requirements
-import pygame
-import sys
-import math
-from tkinter import *
-from tkinter import ttk
-from tkinter import messagebox
-import os
+
+try:
+    import pygame
+    import sys
+    import math
+    from tkinter import *
+    from tkinter import ttk
+    from tkinter import messagebox
+    import os
+except:
+    import install_requirements  # install packages
+
+    import pygame
+    import sys
+    import math
+    from tkinter import *
+    from tkinter import ttk
+    from tkinter imp
 
 screen = pygame.display.set_mode((800, 800))
 
@@ -43,7 +53,7 @@ class spot:
         if j > 0 and grid[self.i][j - 1].obs == False:
             self.neighbors.append(grid[self.i][j - 1])
         #diagonal
-            
+
         if j > 0 and i > 0 and grid[self.i - 1][j - 1].obs == False:
             self.neighbors.append(grid[self.i - 1][j - 1])
             ind = self.neighbors.index(grid[self.i - 1][j - 1])
@@ -58,7 +68,7 @@ class spot:
             self.neighbors.append(grid[self.i + 1][j - 1])
             ind = self.neighbors.index(grid[self.i + 1][j - 1])
             self.neighbors[ind].value = math.sqrt(2)
-            
+
         if j < row - 1 and i < cols - 1 and grid[self.i + 1][j + 1].obs == False:
             self.neighbors.append(grid[self.i + 1][j + 1])
             ind = self.neighbors.index(grid[self.i + 1][j + 1])
@@ -238,12 +248,12 @@ def main():
     if var.get():
         for i in range(len(openSet)):
             openSet[i].show(green, 0)
-            
+
         for i in range(len(closedSet)):
             if closedSet[i] != start:
                 closedSet[i].show(red, 0)
     current.closed = True
-    
+
 
 while True:
     ev = pygame.event.poll()
