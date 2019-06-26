@@ -6,5 +6,5 @@ ports:
   - port: 6080
     onOpen: open-preview
 tasks:
-    - init: /usr/bin/python3 drawNumber.py
-      command: /usr/bin/python3 drawNumber.py
+    - init: /usr/bin/python3 path_finding.py
+      command: /usr/bin/python3 path_finding.py
