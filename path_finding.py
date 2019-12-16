@@ -53,27 +53,6 @@ class spot:
             self.neighbors.append(grid[self.i][j + 1])
         if j > 0 and grid[self.i][j - 1].obs == False:
             self.neighbors.append(grid[self.i][j - 1])
-        #diagonal
-
-        if j > 0 and i > 0 and grid[self.i - 1][j - 1].obs == False:
-            self.neighbors.append(grid[self.i - 1][j - 1])
-            ind = self.neighbors.index(grid[self.i - 1][j - 1])
-            self.neighbors[ind].value = math.sqrt(2)
-
-        if j - 1 > 0 and j + 1 < row and i < cols - 1 and grid[self.i - 1][j + 1].obs == False:
-            self.neighbors.append(grid[self.i - 1][j + 1])
-            ind = self.neighbors.index(grid[self.i - 1][j + 1])
-            self.neighbors[ind].value = math.sqrt(2)
-
-        if j - 1 < row and i < cols - 1 and grid[self.i + 1][j - 1].obs == False:
-            self.neighbors.append(grid[self.i + 1][j - 1])
-            ind = self.neighbors.index(grid[self.i + 1][j - 1])
-            self.neighbors[ind].value = math.sqrt(2)
-
-        if j < row - 1 and i < cols - 1 and grid[self.i + 1][j + 1].obs == False:
-            self.neighbors.append(grid[self.i + 1][j + 1])
-            ind = self.neighbors.index(grid[self.i + 1][j + 1])
-            self.neighbors[ind].value = math.sqrt(2)
 
 
 cols = 50
